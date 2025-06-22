@@ -246,4 +246,11 @@ docs/build/
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
-.pnp.* 
+.pnp.*
+
+# Assets - exclude uploads but keep structure
+assets/uploads/*
+!assets/uploads/.gitkeep
+
+# Keep README files in assets
+!assets/*/README.md 
